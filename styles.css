@@ -5,6 +5,17 @@
     --display-bg-color: #f6f6ff;
     --border-button-color: rgb(195, 195, 195);
     --equal-bg-color: #b5a2c2;
+    --dark-mode-btn-color: #3e3d4f;
+    --dark-mode-btn-font-color: #cabbd4;
+}
+
+.dark-theme{
+    --main-color: #b7b7ff;
+    --display-bg-color: #f6f6ff;
+    --border-btn-color: rgb(195, 195, 195);
+    --equal-bg-color: #b5a2c2;
+    --dark-mode-btn-color: #3e3d4f;
+    --dark-mode-btn-font-color: #cabbd4;
 }
 
 body {
@@ -28,7 +39,7 @@ body {
     border: dotted;
     text-align: right;
     background-color: var(--display-bg-color);
-    border-radius: 20px 20px 0 0; 
+    border-radius: 10px 10px 0 0; 
     border-color: var(--border-button-color);
 }
 
@@ -54,8 +65,28 @@ body {
     opacity: 0.8;
 }
 
+/* Dark Mode Button */
 
+.dark-mode-button-container{
+    display: flex;
+    position: absolute;
+    top:5px;
+    padding: 15px;
+}
 
+.dark-mode-button{
+    cursor: pointer;
+    padding: 5px;
+    width: 21vw;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: var(--dark-mode-btn-color);
+}
+
+span{
+    color: var(--dark-mode-btn-font-color);    
+}
 
 
 

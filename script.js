@@ -1,6 +1,14 @@
 const display = document.getElementById('display');
 const displayVal = document.getElementById('display').value;
 const btnButton = document.querySelector('.btn');
+const darkModeBtn = document.getElementById('dark-mode-btn');
+
+//toggle Dark Mode
+function toggleDarkMode(){
+    document.classList.add('dark-mode');
+    console.log("Dark Mode Activated");
+}
+
 
 function appendToDisplay(val){
     display.value += val;
