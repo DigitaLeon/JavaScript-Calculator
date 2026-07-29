@@ -3,12 +3,24 @@ const displayVal = document.getElementById('display').value;
 const btnButton = document.querySelector('.btn');
 const darkModeBtn = document.getElementById('dark-mode-btn');
 
+
+if(localStorage.getItem('theme') === 'dark'){
+    document.body.classList.add('dark-theme');
+}
+
 //toggle Dark Mode
 function toggleDarkMode(){
     document.body.classList.toggle('dark-theme');
-    console.log("Dark Mode Activated");
+    
+    //save preferences
+    if(document.body.classList.contains('dark-theme')){
+        localStorage.setItem('theme', 'dark');
+    }else{
+        localStorage.setItem('theme', 'light');
+    }
 }
 
+//TODO: Save toggled mode to memory and recall it on side reload
 
 function appendToDisplay(val){
     display.value += val;
