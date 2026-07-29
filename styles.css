@@ -12,7 +12,7 @@
     --display-font-color: black;
     --shaded-btns: #e0e4f6;
     --shaded-clear-btn: #234323;
-    --clear-btn-color: #ff713d;
+    --clear-btn-color: #ecab65;
     --clear-btn-font-color: white;
 }
 
@@ -28,7 +28,7 @@
     --display-font-color:#ffffff;
     --shaded-btns: #2a5a87 ;
     --clear-btn-font-color: white;
-    --clear-btn-color: #693f22;
+    --clear-btn-color: #b07731;
 }
 
 body {
@@ -114,8 +114,13 @@ span{
     color: var(--dark-mode-btn-font-color);    
 }
 
+.rounded{
+    border-radius: 0 0 0 10px;
+}
 
-
+.rounded-1{
+    border-radius: 0 0 10px 0;
+}
 
 
 
