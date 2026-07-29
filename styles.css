@@ -4,18 +4,26 @@
     --main-font-family: Arial, sans-serif;
     --display-bg-color: #f6f6ff;
     --border-button-color: rgb(195, 195, 195);
-    --equal-bg-color: #b5a2c2;
+    --equal-bg-color: #7c8ddc;
     --dark-mode-btn-color: #3e3d4f;
     --dark-mode-btn-font-color: #cabbd4;
+    --btn-color: white;
+    --btn-font-color: black;
+    --display-font-color: black;
+    --shaded-btns: #e0e4f6;
 }
 
 .dark-theme{
-    --main-color: #b7b7ff;
-    --display-bg-color: #f6f6ff;
-    --border-btn-color: rgb(195, 195, 195);
-    --equal-bg-color: #b5a2c2;
-    --dark-mode-btn-color: #3e3d4f;
-    --dark-mode-btn-font-color: #cabbd4;
+    --main-color: #262B40;
+    --display-bg-color: #48566b;
+    --border-btn-color: #5379AE;
+    --equal-bg-color: #4c2c3d;
+    --dark-mode-btn-color: #aa8ab3;
+    --dark-mode-btn-font-color: #4c305e;
+    --btn-color: #5379AE;
+    --btn-font-color: #fdfdfd;
+    --display-font-color:#ffffff;
+    --shaded-btns: #2a5a87 ;
 }
 
 body {
@@ -36,16 +44,18 @@ body {
 #display{
     padding: 20px;
     font-size: 30px;
-    border: dotted;
+    border: solid;
     text-align: right;
     background-color: var(--display-bg-color);
     border-radius: 10px 10px 0 0; 
     border-color: var(--border-button-color);
+    color: var(--display-font-color);
 }
 
 .buttons{
     display: grid;
     grid-template-columns: repeat(4,105px);
+    
 }
 
 .btn{
@@ -54,6 +64,12 @@ body {
     border: 2px solid var(--border-button-color);
     cursor: pointer;
     transition: 0.2s;
+    background-color: var(--btn-color);
+    color: var(--btn-font-color);
+}
+
+.shade{
+    background-color: var(--shaded-btns);
 }
 
 .equal{

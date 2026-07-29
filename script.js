@@ -5,7 +5,7 @@ const darkModeBtn = document.getElementById('dark-mode-btn');
 
 //toggle Dark Mode
 function toggleDarkMode(){
-    document.classList.add('dark-mode');
+    document.body.classList.toggle('dark-theme');
     console.log("Dark Mode Activated");
 }
 
