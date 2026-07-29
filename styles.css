@@ -11,11 +11,14 @@
     --btn-font-color: black;
     --display-font-color: black;
     --shaded-btns: #e0e4f6;
+    --shaded-clear-btn: #234323;
+    --clear-btn-color: #ff713d;
+    --clear-btn-font-color: white;
 }
 
 .dark-theme{
     --main-color: #262B40;
-    --display-bg-color: #48566b;
+    --display-bg-color: #657894;
     --border-btn-color: #5379AE;
     --equal-bg-color: #4c2c3d;
     --dark-mode-btn-color: #aa8ab3;
@@ -24,6 +27,8 @@
     --btn-font-color: #fdfdfd;
     --display-font-color:#ffffff;
     --shaded-btns: #2a5a87 ;
+    --clear-btn-font-color: white;
+    --clear-btn-color: #693f22;
 }
 
 body {
@@ -66,6 +71,11 @@ body {
     transition: 0.2s;
     background-color: var(--btn-color);
     color: var(--btn-font-color);
+}
+
+.clear{
+    background-color: var(--clear-btn-color);
+    color: var(--clear-btn-font-color);
 }
 
 .shade{
